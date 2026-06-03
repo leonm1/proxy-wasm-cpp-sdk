@@ -21,6 +21,9 @@
 // NOLINT(namespace-envoy)
 #pragma once
 
+// IWYU pragma: private, include "proxy_wasm_intrinsics.h"
+// IWYU pragma: friend "proxy_wasm_.*"
+
 #ifdef PROXY_WASM_PROTOBUF
 #include "google/protobuf/message_lite.h"
 #endif

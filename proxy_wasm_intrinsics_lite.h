@@ -22,4 +22,4 @@
 #pragma once
 
 #define PROXY_WASM_PROTOBUF_LITE 1
-#include "proxy_wasm_intrinsics.h"
+#include "proxy_wasm_intrinsics.h" // IWYU pragma: export

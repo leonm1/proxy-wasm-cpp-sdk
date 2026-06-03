@@ -29,6 +29,7 @@
 #define START_WASM_PLUGIN(_x)
 #define END_WASM_PLUGIN
 
+// IWYU pragma: begin_exports
 #include <cstdint>
 #include <string_view>
 #include <optional>
@@ -45,3 +46,4 @@
 #include "proxy_wasm_intrinsics_lite.pb.h"
 #endif
 #include "proxy_wasm_api.h"
+// IWYU pragma: end_exports
