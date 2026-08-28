@@ -23,9 +23,11 @@ def _optimized_wasm_cc_binary_transition_impl(settings, attr):
     copts = list(settings["//command_line_option:copt"])
     copts.append("-O3")
     copts.append("-DSTANDALONE_WASM")
+    copts.append("-fwasm-exceptions")
 
     linkopts = list(settings["//command_line_option:linkopt"])
     linkopts.append("-O3")
+    linkopts.append("-sSUPPORT_LONGJMP=wasm")
 
     features = list(settings["//command_line_option:features"])
     # Enable native wasm exceptions, see https://emscripten.org/docs/porting/exceptions.html.
